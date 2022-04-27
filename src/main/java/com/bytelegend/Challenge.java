@@ -1,5 +1,7 @@
 package com.bytelegend;
 
+import java.util.stream.IntStream;
+
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(isSymmetric("1234"));
