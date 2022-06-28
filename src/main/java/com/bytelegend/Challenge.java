@@ -3,7 +3,6 @@ package com.bytelegend;
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(isSymmetric("1234"));
-        System.out.println(isSymmetric("ABCDDCBA"));
         System.out.println(isSymmetric("1234321"));
     }
 
@@ -20,10 +19,7 @@ public class Challenge {
             return false;
         if (str.equals("") || str.length() == 1)
             return true;
-        if(str.length()%2==0){
-            return false;
-        }
-         else {
+        else {
             char ch[] = str.toCharArray();
             int n = str.length();
             for (int i = 0; i < n; i++) {
