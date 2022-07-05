@@ -20,7 +20,7 @@ public class Challenge {
         if (str == null || str.length() < 2) {
             return false;
         }
-        char[] whole = str.split();
+        char[] whole = str.split("");
         char[] part1, part2;
         if (str.length() % 2 == 0) {
             for (int i = 0; i < str.length()/2; i++){
