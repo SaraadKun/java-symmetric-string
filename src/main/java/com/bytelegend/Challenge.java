@@ -21,17 +21,17 @@ public class Challenge {
             return false;
         }
         char[] whole = str.toCharArray();
-        char[] part1 = new char[];
-        char[] part2 = new char[];
+        char[] part1 = new char[str.length() + 1];
+        char[] part2 = new char[str.length() + 1];
         if (str.length() % 2 == 0) {
-            for (int i = 0; i < str.length()/2; i++){
+            for (int i = 0; i < str.length() / 2; i++){
                 part1[i] = whole[i];
                 part2[i] = whole[str.length() - i - 1];
             }
             return Arrays.equals(part1, part2);
         }
         if (str.length() % 2 == 1) {
-            for (int i = 0; i < (str.length()/2) + 1; i++){
+            for (int i = 0; i < (str.length() / 2) + 1; i++){
                 part1[i] = whole[i];
                 part2[i] = whole[str.length() - i - 1];
             }
