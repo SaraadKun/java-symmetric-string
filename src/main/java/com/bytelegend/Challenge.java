@@ -21,7 +21,8 @@ public class Challenge {
             return false;
         }
         char[] whole = str.toCharArray();
-        char[] part1, part2;
+        char[] part1 = new char[];
+        char[] part2 = new char[];
         if (str.length() % 2 == 0) {
             for (int i = 0; i < str.length()/2; i++){
                 part1[i] = whole[i];
