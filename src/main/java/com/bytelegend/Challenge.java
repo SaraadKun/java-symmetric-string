@@ -1,5 +1,7 @@
 package com.bytelegend;
 
+import java.util.Arrays;
+
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(isSymmetric("1234"));
@@ -25,14 +27,14 @@ public class Challenge {
                 part1[i] = whole[i];
                 part2[i] = whole[str.length() - i - 1];
             }
-            return part1 == part2;
+            return Arrays.equals(part1, part2);
         }
         if (str.length() % 2 == 1) {
             for (int i = 0; i < (str.length()/2) + 1; i++){
                 part1[i] = whole[i];
                 part2[i] = whole[str.length() - i - 1];
             }
-            return part1 == part2;
+            return Arrays.equals(part1, part2);
         }
         return false;
     }
