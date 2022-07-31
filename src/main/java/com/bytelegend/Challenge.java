@@ -18,7 +18,7 @@ public class Challenge {
         char[] chs = str.toCharArray();
         int lo = 0, hi = chs.length - 1;
         while (lo < hi) {
-            if (chs[lo++] != chs[hi--]) {
+            if (chs[hi--] != chs[lo++]) {
                 return false;
             }
         }
